@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>PDF Maker</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/normalize.css/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./index.scss"
+      lang="scss"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="app_page">
+        <div style="padding: 1rem 2rem; font-family: serif">
+          <h1>Hello!</h1>
+          <p>This is an example document.</p>
+          <p>
+            The "save" button in the bottom right corner of
+            the page, will allow you to save this page to a
+            pdf.
+          </p>
+        </div>
+      </div>
+
+      <!-- SAVE BUTTON -->
+      <button class="app_save_button">Save</button>
+    </div>
+    <script src="./src/index.ts"></script>
+  </body>
+</html>

@@ -1,11 +1,12 @@
+import { flow, pipe } from 'fp-ts/function'
 import * as I from 'fp-ts/IO'
 import * as T from 'fp-ts/Task'
-import { flow, pipe } from 'fp-ts/function'
-import { createPdf, addImage, save } from './pdf'
-import { selectElement, toCanvas, toImage, on } from './dom'
+import 'virtual:windi.css'
+import { on, selectElement, toCanvas, toImage } from './dom'
+import { addImage, createPdf, save } from './pdf'
 
 export const convertPageToCanvasImage = pipe(
-  selectElement('.app_page'),
+  selectElement('#page'),
   I.chain(toCanvas),
   T.map(toImage)
 )
@@ -19,6 +20,6 @@ export const downloadPDF = pipe(
 )
 
 export const main = pipe(
-  selectElement('.app_save_button'),
+  selectElement('#download_button'),
   I.map(on('click')(downloadPDF))
 )

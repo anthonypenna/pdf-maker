@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@types/dom-to-image": "^2.6.4",
     "vite": "^4.1.4",
     "vite-plugin-windicss": "^1.8.10",
     "windicss": "^3.5.6"

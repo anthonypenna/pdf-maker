@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/dom-to-image': ^2.6.4
   dom-to-image: ^2.6.0
   fp-ts: ^2.9.3
   html2canvas: ^1.4.1
@@ -17,7 +16,6 @@ dependencies:
   jspdf: 2.5.1
 
 devDependencies:
-  '@types/dom-to-image': 2.6.4
   vite: 4.1.4
   vite-plugin-windicss: 1.8.10_vite@4.1.4
   windicss: 3.5.6
@@ -256,10 +254,6 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
-    dev: true
-
-  /@types/dom-to-image/2.6.4:
-    resolution: {integrity: sha512-UddUdGF1qulrSDulkz3K2Ypq527MR6ixlgAzqLbxSiQ0icx0XDlIV+h4+edmjq/1dqn0KgN0xGSe1kI9t+vGuw==}
     dev: true
 
   /@types/raf/3.4.0:

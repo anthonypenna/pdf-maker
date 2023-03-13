@@ -12,14 +12,50 @@
     <main
       class="w-screen h-screen flex justify-center items-center"
     >
-      <div id="page" class="w-[210mm] h-[297mm] bg-white">
-        <h1>Hello!</h1>
-        <p>This is an example document.</p>
-        <p>
-          The "save" button in the bottom right corner of
-          the page, will allow you to save this page to a
-          pdf.
-        </p>
+      <div
+        id="page"
+        class="w-[210mm] h-[297mm] p-16 bg-white flex flex-col justify-between leading-7 text-xl"
+      >
+        <section class="text-center">
+          <h2 class="mb-4 font-bold text-lg">
+            UNIVERSITÀ DEGLI STUDI DI MILANO-BICOCCA
+          </h2>
+          <p class="mb-4">Facoltà di psicologia</p>
+          <p>
+            Corso di Laurea Magistrale in <br />Psicologia
+            dello Sviluppo e dei Processi Educativi
+          </p>
+        </section>
+        <section class="flex justify-center items-center">
+          <img src="./assets/unimib.png" width="250" />
+        </section>
+        <section class="text-center my-8">
+          <h1 class="font-bold text-2xl">
+            L'impatto della povertà nello sviluppo<br />
+            cognitivo e sociale del bambino
+          </h1>
+        </section>
+        <section>
+          <p>
+            <strong>Relatore:</strong> Prof. Bulf Hermann
+            Sergio
+          </p>
+        </section>
+        <section
+          class="text-right flex flex-col items-end gap-4"
+        >
+          <div class="w-60 text-left">
+            <p><strong>Studentessa:</strong></p>
+            <p>Abrudean Denisa Maria</p>
+          </div>
+          <div class="w-60 text-left">
+            <p><strong>Matricola:</strong></p>
+            <p>873934</p>
+          </div>
+        </section>
+        <section class="flex justify-center">
+          <p>Anno accademico 2022 / 2023</p>
+        </section>
       </div>
       <button
         id="download_button"
